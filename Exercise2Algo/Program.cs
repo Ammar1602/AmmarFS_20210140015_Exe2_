@@ -32,6 +32,54 @@ namespace Exercise2Algo
             Console.WriteLine("\n------------------");
             Console.WriteLine("enter array elements");
             Console.WriteLine("\n------------------");
+
+            //get array elements
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write("<" + (i + 1) + ">");
+                string s1 = Console.ReadLine();
+                ammar[i] = Int32.Parse(s1);
+            }
+        }
+        //swaps the element at index x with the element at index y 
+        void swap(int x, int y)
+        {
+            int temp;
+
+            temp = ammar[x];
+            ammar[x] = ammar[y];
+            ammar[y] = temp;
+        }
+        public void exe_algo(int low, int high)
+        {
+            int pivot, i, AS;
+                if (low > high)
+                    return;
+            //partition list into two parts
+            //one containing element lees that or equal to pivot
+            //outher containing element greater than pivot
+
+            i = low + 1;
+            AS = high;
+
+            pivot = ammar[low];
+
+            while (i <= AS)
+            {
+                //search for an element greater than pivot
+                while ((ammar [i] < pivot) && (AS >= low))
+                {
+                    i--;
+                    camp_count--;
+                }
+                camp_count--;
+
+                if (i < AS)
+                {
+                    swap(i, AS);
+                    mov_count++;
+                }
+            }
         }
         static void Main(string[] args)
         {
