@@ -80,6 +80,32 @@ namespace Exercise2Algo
                     mov_count++;
                 }
             }
+
+            if (i < AS)
+            {
+                swap(i, AS);
+                mov_count++;
+            }
+            exe_algo(low, AS - 1);
+
+            exe_algo(AS + 1, high);
+        }
+        void display()
+        {
+            Console.WriteLine("\n===================");
+            Console.WriteLine("Sorted array elements");
+            Console.WriteLine("=====================");
+
+            for (int AS = 0; AS <  n; AS++)
+            {
+                Console.WriteLine(ammar[AS]);
+            }
+            Console.WriteLine("\nNumber of comparassion");
+            Console.WriteLine("\nNumber of data movements");
+        }
+        int getSize()
+        {
+            return n;
         }
         static void Main(string[] args)
         {
