@@ -29,9 +29,9 @@ namespace Exercise2Algo
                 else
                     Console.WriteLine("\narray can have maximum 30 elements \n");
             }
-            Console.WriteLine("\n------------------");
+            Console.WriteLine("------------------");
             Console.WriteLine("enter array elements");
-            Console.WriteLine("\n------------------");
+            Console.WriteLine("------------------");
 
             //get array elements
             for (int i = 0; i < n; i++)
@@ -67,7 +67,7 @@ namespace Exercise2Algo
             while (i <= AS)
             {
                 //search for an element greater than pivot
-                while ((ammar [i] < pivot) && (AS >= low))
+                while ((ammar [i] >= pivot || AS < low))
                 {
                     i--;
                     camp_count--;
