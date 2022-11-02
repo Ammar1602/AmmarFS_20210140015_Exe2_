@@ -67,7 +67,7 @@ namespace Exercise2Algo
             while (i <= AS)
             {
                 //search for an element greater than pivot
-                while ((ammar [i] >= pivot || AS < low))
+                while ((ammar [i] >- pivot || AS < low))
                 {
                     i--;
                     camp_count--;
@@ -94,7 +94,7 @@ namespace Exercise2Algo
         {
             Console.WriteLine("\n===================");
             Console.WriteLine("Sorted array elements");
-            Console.WriteLine("=====================");
+            Console.WriteLine("\n=====================");
 
             for (int AS = 0; AS <  n; AS++)
             {
