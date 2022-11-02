@@ -21,16 +21,16 @@ namespace Exercise2Algo
         {
             while (true)
             {
-                Console.Write("enter the of element in the array");
+                Console.Write("Enter The Element In The Array");
                 string s = Console.ReadLine();
                 n = Int32.Parse(s);
                 if (n <= 35)
                     break;
                 else
-                    Console.WriteLine("\narray can have maximum 30 elements \n");
+                    Console.WriteLine("\nArray can have maximum 35 elements \n");
             }
             Console.WriteLine("------------------");
-            Console.WriteLine("enter array elements");
+            Console.WriteLine("Enter Array Alements");
             Console.WriteLine("------------------");
 
             //get array elements
