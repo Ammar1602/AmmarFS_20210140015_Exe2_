@@ -16,6 +16,23 @@ namespace Exercise2Algo
 
         //number of elemebt in array 
         private int n;
+
+        void input()
+        {
+            while (true)
+            {
+                Console.Write("enter the of element in the array");
+                string s = Console.ReadLine();
+                n = Int32.Parse(s);
+                if (n <= 35)
+                    break;
+                else
+                    Console.WriteLine("\narray can have maximum 30 elements \n");
+            }
+            Console.WriteLine("\n------------------");
+            Console.WriteLine("enter array elements");
+            Console.WriteLine("\n------------------");
+        }
         static void Main(string[] args)
         {
         }
